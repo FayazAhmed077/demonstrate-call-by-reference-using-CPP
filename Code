@@ -1,0 +1,20 @@
+#include <iostream>  
+using namespace std;  
+int swap(int*a,int*b);
+int main()  
+{  
+    int x,y;
+    cout<<"Enter 2 Numbers:\n ";
+    cin>>x>>y;
+    swap(&x,&y);
+}  
+int swap(int *a,int *b)
+{  
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+    cout<<"After swapping values are :"<<endl;
+    cout<<*a<<","<<""<<*b;
+    
+}
